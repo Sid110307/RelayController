@@ -1,0 +1,36 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.25156537753222835" />
+        <entry key="../../../../Android/Sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.255859375" />
+        <entry key="../../../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.255859375" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/divider.xml" value="0.2915" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1715" />
+        <entry key="app/src/main/res/drawable/list_item_background.xml" value="0.2915" />
+        <entry key="app/src/main/res/drawable/list_item_background_current.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/normal_mode.xml" value="0.2035" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.30324074074074076" />
+        <entry key="app/src/main/res/layout/activity_normal_mode.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/layout/fragment_expert_mode.xml" value="0.255859375" />
+        <entry key="app/src/main/res/layout/fragment_normal_mode.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.255078125" />
+        <entry key="app/src/main/res/layout/tabs.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/menu/tabs.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.1625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://schemas.android.com/apk/res/android" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

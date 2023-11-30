@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/normal_mode_fragment"
+        android:icon="@drawable/ic_normal_mode"
+        android:title="Normal Mode"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/expert_mode_fragment"
+        android:icon="@drawable/ic_expert_mode"
+        android:title="Expert Mode"
+        app:showAsAction="never" />
+</menu>

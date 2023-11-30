@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalModeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/relay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Relay 1"
+            android:textColor="#546E7A"
+            android:textOff="Off"
+            android:textOn="On" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/relay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Relay 2"
+            android:textColor="#546E7A"
+            android:textOff="Off"
+            android:textOn="On" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/relay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Relay 3"
+            android:textColor="#546E7A"
+            android:textOff="Off"
+            android:textOn="On" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/relay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Relay 4"
+            android:textColor="#546E7A"
+            android:textOff="Off"
+            android:textOn="On" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toggle_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Toggle All"
+        android:textColor="#5E35B1" />
+</RelativeLayout>

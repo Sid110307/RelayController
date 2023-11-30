@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_background"
+    android:maxHeight="128dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/list_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change the state of relay"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/relay_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/relays" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/relay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/relay_states" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="after"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/relay_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="delay"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second(s)."
+            android:textSize="16sp" />
+    </LinearLayout>
+</FrameLayout>
