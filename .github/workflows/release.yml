@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Normalize gradlew line endings
+        run: sed -i 's/\r$//' ./gradlew
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Prepare release
+        id: release
+        run: |
+          date=$(date +'%Y-%m-%d')
+          apk=$(find . -path "*/outputs/apk/debug/*.apk" | head -n 1)
+          renamed="debug-$date.apk"
+          cp "$apk" "$renamed"
+
+          echo "date=$date" >> "$GITHUB_OUTPUT"
+          echo "apk=$renamed" >> "$GITHUB_OUTPUT"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: debug-${{ steps.release.outputs.date }}-${{ github.run_number }}
+          name: Debug build ${{ steps.release.outputs.date }}
+          prerelease: true
+          files: ${{ steps.release.outputs.apk }}
